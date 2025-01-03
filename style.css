@@ -1,0 +1,318 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* General styles for the body */
+body {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='4000' preserveAspectRatio='none' viewBox='0 0 1440 4000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1303%26quot%3b)' fill='none'%3e%3crect width='1440' height='4000' x='0' y='0' fill='rgba(23%2c 21%2c 59%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c961.158C178.328%2c951.965%2c328.959%2c842.072%2c477.008%2c742.238C622.054%2c644.429%2c770.311%2c543.931%2c849.817%2c388.098C931.155%2c228.675%2c931.111%2c46.038%2c923.439%2c-132.771C915.039%2c-328.547%2c946.126%2c-561.902%2c803.298%2c-696.062C659.516%2c-831.118%2c424.931%2c-752.504%2c230.188%2c-783.947C65.019%2c-810.615%2c-88.934%2c-890.715%2c-254.532%2c-866.857C-435.345%2c-840.807%2c-610.507%2c-769.595%2c-742.926%2c-643.749C-882.693%2c-510.92%2c-970.225%2c-333.63%2c-1013.359%2c-145.699C-1059.052%2c53.385%2c-1091.534%2c274.395%2c-994.969%2c454.387C-899.783%2c631.808%2c-689.107%2c701.722%2c-509.696%2c793.102C-346.991%2c875.973%2c-182.352%2c970.558%2c0%2c961.158' fill='%23151336'%3e%3c/path%3e%3cpath d='M1440 4895.651C1655.465 4895.661 1881.758 5085.528 2068.027 4977.228 2252.937 4869.718 2233.432 4596.357 2302.779 4394.018 2364.564 4213.744 2481.325 4042.803 2452.86 3854.373 2424.46 3666.376 2258.0389999999998 3541.183 2150.281 3384.538 2026.629 3204.7889999999998 1982.404 2927.1369999999997 1772.964 2866.029 1563.465 2804.904 1381.241 3026.596 1175.799 3100.215 985.932 3168.253 772.12 3160.069 611.609 3282.195 430.87 3419.712 253.2639999999999 3599.941 223.15100000000007 3825.043 193.08899999999994 4049.762 352.25199999999995 4247.755 455.43399999999997 4449.636 554.026 4642.536 614.678 4887.781 812.009 4977.173 1008.261 5066.077 1224.55 4895.641 1440 4895.651' fill='%23191740'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1303'%3e%3crect width='1440' height='4000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+/* Container for main content */
+.container {
+    margin: 20px 100px;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+nav ul li:hover {
+    background: #C8ACD6;
+    border-radius: 20px;
+    padding: 2px 10px;
+    transition: background 0.3s ease, padding 0.3s ease;
+    /* Added transition */
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul a:hover {
+    color: #433D8B;
+}
+
+/* Section styles */
+.second {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.second h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+}
+
+.second p {
+    color: rgb(181, 181, 181);
+    font-weight: 100;
+    margin: 5px 0;
+}
+
+.second button {
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 30px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #433D8B;
+    color: white;
+    transition: background 0.3s, border 0.3s;
+}
+
+.second button:hover {
+    background: #C8ACD6;
+    border: 3px solid #433D8B;
+}
+
+
+/* Reasons to choose us */
+.third {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.third h4 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    width: 300px;
+    /* Fixed width for cards */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+    /* Ensure images fit within the card */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-image img {
+    width: 100%;
+    /* Make image responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.card-text {
+    padding: 0 15px 15px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Services section styles */
+.fourth {
+    margin: 50px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.fourth h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.fourth div {
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+
+}
+
+.fourth div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fourth h4 {
+    font-size: 20px;
+    color: #433D8B;
+    margin: 10px 0;
+}
+
+.fourth p {
+    color: #555;
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        /* Two cards in a row */
+    }
+
+    .fourth div {
+        margin: 10px auto;
+        width: 100%;
+        /* Responsive width */
+        text-align: left;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 20px 12px;
+    }
+
+    .second {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        /* One card in a row */
+
+    }
+
+    .card-text {
+        text-align: left;
+    }
+
+    .card-title {
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    .fourth div {
+        width: 100%;
+        /* Full width on small screens */
+    }
+
+    #about>.container>p {
+        padding: 0 30px;
+    }
+}
+
+/* Menu toggle styles */
+nav .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 65px;
+        left: 0;
+    }
+
+    nav ul.active {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+    }
+
+    nav .menu-toggle {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    #services>div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #services>div>img {
+        width: 100px;
+        align-self: center;
+
+    }
+}
